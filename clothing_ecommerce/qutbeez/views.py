@@ -9,13 +9,13 @@ from .models import *
 # CUSTOMER - LIST AND DETAILS --------------------------------------------------------------------------------->
 
 class CustomerList(generics.ListCreateAPIView):
-    queryset = Category.objects.all()
-    serializer_class = CategorySerializer
+    queryset = Customer.objects.all()
+    serializer_class = CustomerSerializer
 
 
 class CustomerDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Category.objects.all()
-    serializer_class = CategorySerializer
+    queryset = Customer.objects.all()
+    serializer_class = CustomerSerializer
 
 
 
